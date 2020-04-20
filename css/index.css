@@ -13,7 +13,7 @@ body, html {
 
 .my-content {
     margin: 0;
-    padding-left: 2%;
+    padding-left: 10%;
 }
 
 .row {
@@ -35,4 +35,81 @@ body, html {
     background: #555; 
 }
 
+.fadeIn {    
+    animation-duration: 0.7s;    
+    animation-fill-mode: forwards;    
+    animation-name: fadeIn;    
+    animation-timing-function: ease-in-out;
+}
+
+.progress_bar {    
+    margin-bottom: 10px;    
+    position: relative;
+}
+
+.progress_bar_title {    
+    color: #ffffff;    
+    display: inline;    
+    font-size: 13px;    
+    font-weight: 900;    
+    text-transform: uppercase;
+}
+
+.progress_number {    
+    color: #ffffff;    
+    font-size: 13px;    
+    font-weight: 900;    
+    position: absolute;    
+    right: 0;    
+    text-transform: uppercase;    
+    top: 0;
+}
+
+.progress_bar_holder {
+    background: #d6d9dc;    
+    margin-top: 5px;
+}
+
+.progress_bar_content {    
+    height: 5px;    
+    transition: width 1s ease-in-out 0s;
+}
     
+.html {
+    width: 90%;
+    background:#9dd122;
+}
+
+.css {
+    width: 60%; background:#1ABC9C;
+}
+
+.javascript {
+    width: 50%;
+    background:#e22020;
+}
+
+.java {
+    width: 85%;
+    background:#db5415;
+}
+
+.cshap {
+    width:50%;
+    background:#2355e0;
+}
+
+.c {
+    width:70%;
+    background:#df233f;
+}
+
+.english {
+    width:60%;
+    background:#da304c;
+}
+
+.office {
+    width:80%;
+    background:#26b1db;
+}

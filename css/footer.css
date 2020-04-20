@@ -1,0 +1,21 @@
+footer {
+    color: #ffffff;
+    background-color: #111111;
+}
+
+.top-footer {
+    background-color: #1f1f1f;
+}
+
+.end-footer {
+    background-color: #000000;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+footer hr {
+    width: 60px;
+}

@@ -109,22 +109,7 @@ body, html {
     background:#da304c;
 }
 
-.japanese {
-    width:30%;
-    background:#3f26c9;
-}
-
 .office {
     width:80%;
     background:#26b1db;
-}
-
-.my-content a {
-    color: #12be5a;
-    text-decoration: none;
-}
-
-.my-content a:hover {
-    text-decoration: none;
-    color: #50fc98;
 }

@@ -1,323 +1,75 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Đỗ Thành Đạt</title>
+  <meta charset="UTF-8">
+  <title>Đạt yêu Ngân</title>
+  <style>
+    body {
+      background: #ffe6e6;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .heart {
+      position: relative;
+      width: 200px;
+      height: 180px;
+      animation: pulse 1s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 160px;
+      background: red;
+      border-radius: 100px 100px 0 0;
+      top: 0;
+    }
+
+    .heart::before {
+      left: 100px;
+      transform: rotate(-45deg);
+      transform-origin: left bottom;
+    }
+
+    .heart::after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: right bottom;
+    }
+
+    .heart-text {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      text-shadow: 1px 1px 2px black;
+      z-index: 10; /* Quan trọng để hiện chữ lên trên */
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <!-- #region Header -->
-    <header>
-
-        <div class="top-header">
-            <div class="container-xl">
-                <div class="language">
-                    <div class="text-and-image">
-                        <a href="https://shinigamidev99.github.io/">
-                            <div class="flag">
-                                <img src="image/VN.png" alt="Viet Nam">
-                            </div>
-                            <div>Việt Nam</div>
-                        </a>
-                    </div>
-
-                    <div class="text-and-image">
-                        <a href="https://shinigamidev99.github.io/english.html">
-                            <div class="flag">
-                                <img src="image/usa.png" alt="English">
-                            </div>
-                            <div>English</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-black">
-            <div class="container-xl">
-                <a class="navbar-brand" href="https://shinigamidev99.github.io/">Menu</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#target">Mục tiêu<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#academicLevel">Trình độ học vấn<span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#experience">Kinh nghiệm<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#experienceWork">Kinh nghiệm làm việc<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#project">Dự án<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#action">Hoạt động<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#contact">Thông tin liên hệ<span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="header">
-            <img src="image/MyPicture.png" alt="Đỗ Thành Đạt">
-            <div class="title">Đỗ Thành Đạt</div>
-            <div class="contact">
-                <a href="https://www.facebook.com/dat.dothanh.399">
-                    <span class="fa-stack">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x"></i>
-                    </span></a>
-                <a href="mailto:shinigamidev99@gmail.com">
-                    <span class="fa-stack">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-envelope fa-stack-1x"></i>
-                    </span></a>
-                <a href="tel:+84395420594">
-                    <span class="fa-stack">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-phone fa-stack-1x"></i>
-                    </span></a>
-            </div>
-        </div>
-    </header>
-    <!-- #endregion Header -->
-
-    <!-- #region Body -->
-    <div class="my-body">
-        <div class="container-xl">
-            <!-- #region Target-->
-            <div class="row">
-                <div class="col-md-10 col-lg-10 col-xl-10 mb-4 py-4">
-                    <h6 class="text-uppercase font-weight-bold" id="target">Mục tiêu</h6>
-                    <hr class="deep-purple accent-2 mb-0 mt-0 d-inline-block mx-auto">
-                    <p class="my-content"><i class="fa fa-tags mr-2"></i> Mong muốn trở thành một Java developer full
-                        stack.</p>
-                    <p class="my-content"><i class="fa fa-tags mr-2"></i> Học hỏi tích lũy kinh nghiệm khả năng lập
-                        trình ngôn ngữ mới, các công nghệ
-                        mới.
-                    </p>
-                    <p class="my-content"><i class="fa fa-tags mr-2"></i> Trở kỹ sư lập trình giỏi tham gia vào các dự
-                        án phát triển phần mềm.</p>
-                </div>
-            </div>
-            <!-- #endregion Target-->
-
-            <!-- #region Academic Level-->
-            <div class="row">
-                <div class="col-md-10 col-lg-10 col-xl-10 mb-4 py-4">
-                    <h6 class="text-uppercase font-weight-bold" id="academicLevel">Trình độ học vấn</h6>
-                    <hr class="deep-purple accent-2 mb-0 mt-0 d-inline-block mx-auto">
-                    <p class="my-content">
-                        <img src="image/LearningSchedule.png" alt="learning schedule" class="img-fluid">
-                    </p>
-                </div>
-            </div>
-            <!-- #endregion Academic Level-->
-
-            <!-- #region Experience-->
-            <div class="row">
-                <div class="col-md-10 col-lg-10 col-xl-10 mb-4 py-4">
-                    <h6 class="text-uppercase font-weight-bold" id="experience">Kinh nghiệm</h6>
-                    <hr class="deep-purple accent-2 mb-0 mt-0 d-inline-block mx-auto">
-                    <p class="my-content">
-                        <i class="fa fa-check"></i> Có kinh nghiệp về các ngôn ngữ lập trình:</br>
-                    <span class="list-content">+ Java (Java Core, Java Desktop, Java Web Application), spring boot</span></br>
-                    <span class="list-content">+ C/C++ (basic)</span></br>
-                    <span class="list-content">+ C# (basic)</span>
-                    </p>
-                    <p class="my-content">
-                        <i class="fa fa-check"></i>
-                        Đã sử dụng các IDE: Netbeans, Visual Studio 2019, Visual Studio Code, IntelliJ IDEA.
-                    </p>
-                    <p class="my-content">
-                        <i class="fa fa-check"></i>
-                        Các tool khác: Github, Astah UML, Postman.
-                    </p>
-                    <p class="my-content">
-                        <i class="fa fa-check"></i>
-                        Các công nghệ hỗ trợ khác: AWS, Firebase, VNPAY API, Heroku, SQL server.
-                    </p>
-                    <p class="my-content">
-                        <i class="fa fa-check"></i>
-                        Office: Word, Excell, PowerPoint.
-                    </p>
-                </div>
-            </div>
-            <!-- #endregion Experience-->
-
-            <!-- #region Work Experience-->
-            <div class="row">
-                <div class="col-md-10 col-lg-10 col-xl-10 mb-4 py-4">
-                    <h6 class="text-uppercase font-weight-bold" id="experienceWork">Kinh nghiệm làm việc</h6>
-                    <hr class="deep-purple accent-2 mb-0 mt-0 d-inline-block mx-auto">
-                    <p class="my-content">
-                        <div class="row ">
-                            <div class="col">
-                                <h8 class="text-uppercase font-weight-bold">FPT software
-                                </h8></br>
-                                <span class="mr-4"><i class="fa fa-calendar mr-2"></i>JUNE 2020 - MAY 2021</span>
-                            </div>
-                            <div class="col">
-                                <h8 class="text-uppercase font-weight-bold">Developer
-                                </h8></br>
-                                Nhiệm vụ chính:</br>
-                                <span class="list-padding-left">- Tham gia viết mã sản phẩm bằng vba, C#, java</span></br>
-                                <span class="list-padding-left">- Viết tài liệu thiết kế cho sản phẩm.</span></br></br>
-                                Những điều đạt được:</br>
-                                <span class="list-padding-left">- Nâng cao kỹ năng viết mã của bản thân</span></br>
-                                <span class="list-padding-left">- Có thể tham gia làm tài liệu thiết kế ED, ID, UTC, UTR</span>
-                            </div>
-                          </div>
-
-                    </p>
-                </div>
-            </div>
-            <!-- #endregion Work Experience-->
-
-            <!-- #region Project-->
-            <div class="row">
-                <div class="col-md-10 col-lg-10 col-xl-10 mb-4 py-4">
-                    <h6 class="text-uppercase font-weight-bold" id="project">Dự án</h6>
-                    <hr class="deep-purple accent-2 mb-0 mt-0 d-inline-block mx-auto">
-                    <p class="my-content">
-                        <h7 class="text-uppercase font-weight-bold"><i class="fa fa-tasks mr-2"></i>Graduation project
-                        </h7>
-                    <p class="my-content"><i class="mr-4"><u>Mô tả: </u></i>Hệ thống đấu online gia cầm số lượng lớn (kết nối nông trại và thương lái)</p>
-                    <p class="my-content"><i class="mr-4"><u>IDE: </u></i>IntelliJ IDEA</p>
-                    <p class="my-content"><i class="mr-4"><u>Cơ sở dữ liệu: </u></i>SQL Server 2017</p>
-                    <p class="my-content"><i class="mr-4"><u>Ngôn ngữ sử dụng: </u></i>Spring boot, Angular</p>
-                    <p class="my-content"><i class="mr-4"><u>Triển khai: </u></i>AWS, Heroku, Firebase</p>
-                    <p class="my-content"><i class="mr-4"><u>Link source code: </u></i>
-                        <a href="https://github.com/VietTQ1411/PASS/tree/develop" target="blank">Link to project</a>
-                    </p>
-                    </p>
-                </div>
-            </div>
-            <!-- #endregion Project-->
-
-            <!-- #region Action-->
-            <div class="row">
-                <div class="col-md-10 col-lg-10 col-xl-10 mb-4 py-4">
-                    <h6 class="text-uppercase font-weight-bold" id="action">Hoạt động</h6>
-                    <hr class="deep-purple accent-2 mb-0 mt-0 d-inline-block mx-auto">
-                    <p class="my-content"><span class="mr-4"><i class="fa fa-calendar mr-2"></i>06/2019</span> Tham gia
-                        giải code Battle code 2019 được tổ
-                        chức ở trường</p>
-                    <p class="my-content"><span class="mr-4"><i class="fa fa-calendar mr-2"></i>09/2018</span> Tham gia
-                        edit video phim ngắn nhóm môn
-                        Working in Group Skills</p>
-                </div>
-            </div>
-            <!-- #endregion Action-->
-
-            <!-- #region Contact-->
-            <div class="row">
-                <div class="col-md-10 col-lg-10 col-xl-10 mb-4 py-4">
-                    <h6 class="text-uppercase font-weight-bold" id="contact">Thông tin liên hệ</h6>
-                    <hr class="deep-purple accent-2 mb-0 mt-0 d-inline-block mx-auto">
-                    <p class="my-content"><i class="fa fa-male mr-2"></i> Đỗ Thành Đạt</p>
-                    <p class="my-content"><i class="fa fa-home mr-1"></i> Hải Phòng, VN</p>
-                    <p class="my-content"><i class="fa fa-envelope mr-1"></i> shinigamidev99@gmail.com</p>
-                    <p class="my-content"><i class="fa fa-phone mr-1"></i> + 84 395 420 594</p>
-                    <p class="my-content"><i class="fa fa-github mr-1"></i> https://github.com/shinigamidev99</p>
-                </div>
-            </div>
-            <!-- #endregion Contact-->
-        </div>
-    </div>
-    <!-- #endregion Body -->
-
-    <!-- #region Footer -->
-    <footer>
-        <div class="top-footer">
-            <div class="container">
-                <div class="row py-4 d-flex align-items-center">
-                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0">Get connected with me on social networks!</h6>
-                    </div>
-
-                    <div class="col-md-6 col-lg-7 text-center text-md-right">
-                        <a class="fb-ic" href="https://www.facebook.com/dat.dothanh.399">
-                            <i class="fa fa-facebook-f white-text mr-4"> </i>
-                        </a>
-                        <a class="tw-ic" href="https://twitter.com/">
-                            <i class="fa fa-twitter white-text mr-4"> </i>
-                        </a>
-                        <a class="gplus-ic" href="https://mail.google.com/">
-                            <i class="fa fa-google white-text mr-4"> </i>
-                        </a>
-                        <a class="ins-ic" href="https://www.instagram.com/dothanhdat1999/?hl=vi">
-                            <i class="fa fa-instagram white-text"> </i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center text-md-left mt-5">
-            <div class="row mt-3">
-                <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">University</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
-                    <p>Started study FPT University in 2017 to 2021</p>
-                </div>
-
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">Products</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
-                    <p>
-                        <a href="#">Updating <i class="fa fa-spinner fa-spin"></i></a>
-                    </p>
-                </div>
-
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
-
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
-
-                    <p><i class="fa fa-home mr-3"></i> Hải Phòng, VN</p>
-                    <p><i class="fa fa-envelope mr-3"></i> shinigamidev99@gmail.com</p>
-                    <p><i class="fa fa-phone mr-3"></i> + 84 395 420 594</p>
-                    <p><i class="fa fa-print mr-3"></i> + 84 395 420 594</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-copyright text-center py-3 end-footer">© 2020 Copyright:
-            <a href="">Đỗ Thành Đạt</a>
-        </div>
-    </footer>
-    <!-- #endregion Footer -->
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+  <div class="heart">
+    <div class="heart-text">Đạt yêu Ngân</div>
+  </div>
 </body>
-
 </html>
